@@ -1,5 +1,5 @@
 name: deepanon
-description: "DeepAnon - Anonim Sosyal Medya Uygulaması"
+description: "DeepAnon Uygulaması"
 publish_to: "none"
 version: 1.0.0+1
 
@@ -8,12 +8,12 @@ environment:
 
 dependencies:
   flutter:
-  sdk: flutter
+    sdk: flutter
   cupertino_icons: ^1.0.6
 
 dev_dependencies:
   flutter_test:
-  sdk: flutter
+    sdk: flutter
   flutter_lints: ^3.0.0
 
 flutter:
