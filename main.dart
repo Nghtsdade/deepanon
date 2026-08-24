@@ -1,38 +1,27 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const DeepAnonApp());
+  runApp(const MyApp());
 }
 
-class DeepAnonApp extends StatelessWidget {
-  const DeepAnonApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    main:
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'DeepAnon',
-      theme: ThemeData.dark(),
-      home: const AnaSayfa(),
-    );
-  }
-}
-
-class AnaSayfa extends StatelessWidget {
-  const AnaSayfa({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('DeepAnon - Anonim Akış'),
-        centerTitle: true,
-      ),
-      body: const Center(
-        child: Text(
-          'Hoş Geldiniz! Anonim Paylaşım Alanı',
-          style: TextStyle(fontSize: 18),
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('DeepAnon'),
+          backgroundColor: Colors.deepPurple,
+        ),
+        body: const Center(
+          child: Text(
+            'Hoş Geldiniz!',
+            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+          ),
         ),
       ),
     );
