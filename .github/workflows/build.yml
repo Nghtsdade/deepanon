@@ -22,6 +22,10 @@ jobs:
           flutter-version: '3.19.x'
           channel: 'stable'
 
+      - name: Create Flutter Project Structure
+        run: |
+          flutter create . --org com.deepanon --project-name deepanon --platforms android
+
       - name: Get Dependencies
         run: flutter pub get
 
